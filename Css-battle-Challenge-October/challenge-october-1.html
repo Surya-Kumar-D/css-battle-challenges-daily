@@ -1,0 +1,31 @@
+<div></div>
+<style>
+  body {
+    background-color: #6b7cbe;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  div {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    background: #abc497;
+    position: absolute;
+    bottom: -382px;
+    right: -80px;
+    display: block;
+    overflow: hidden;
+  }
+  div::after {
+    content: "";
+    height: 510px;
+    width: 100px;
+    background-color: #fffefe;
+    position: absolute;
+    top: 0px;
+    left: 40%;
+    z-index: 10;
+    clip-path: polygon(22% 0%, 79% 0%, 140% 100%, -45% 100%);
+  }
+</style>
