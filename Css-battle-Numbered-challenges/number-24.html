@@ -1,0 +1,41 @@
+<div class="one"></div>
+<div class="two"></div>
+<style>
+  body {
+    background-color: #62306d;
+  }
+  .one {
+    width: 100px;
+    height: 150px;
+    background: #aa445f;
+    position: absolute;
+    inset: 50px 0 0 80px;
+    border-radius: 50px;
+  }
+  .one::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    background-color: #f7ec7d;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+  }
+  .two {
+    width: 100px;
+    height: 150px;
+    background: #e38f66;
+    position: absolute;
+    inset: 100px 0 0 220px;
+    border-radius: 50px;
+  }
+  .two::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    background-color: #f7ec7d;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+  }
+</style>
