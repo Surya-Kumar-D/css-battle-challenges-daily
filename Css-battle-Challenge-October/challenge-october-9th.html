@@ -1,0 +1,31 @@
+<div></div>
+<style>
+  body {
+    background-color: #b5e0ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 150px;
+    height: 150px;
+    border: solid #5d3a3a;
+    border-top-width: 0;
+    border-left-width: 26px;
+    border-right-width: 26px;
+    border-bottom-width: 50px;
+    position: relative;
+  }
+  div::before {
+    content: "";
+    height: 51px;
+    width: 51px;
+    border: 1px solid #5d3a3a;
+
+    border-width: 50px 25px 0px 25px;
+    border-color: #5d3a3a;
+    position: absolute;
+    right: 0px;
+    top: 24px;
+  }
+</style>
