@@ -1,0 +1,65 @@
+<div class="one"></div>
+<div class="two"></div>
+<style>
+  body {
+    background-color: #62306d;
+    margin: 0;
+  }
+  .one {
+    width: 70px;
+    height: 110px;
+    background: #aa445f;
+    position: absolute;
+    top: 17px;
+    left: 165px;
+  }
+  .one::before {
+    position: absolute;
+    content: "";
+    height: 70px;
+    width: 70px;
+    background-color: #e38f66;
+    border-radius: 50%;
+    top: 20px;
+    left: -65px;
+    z-index: -1;
+  }
+  .one::after {
+    position: absolute;
+    content: "";
+    height: 70px;
+    width: 70px;
+    background-color: #e38f66;
+    border-radius: 50%;
+    top: 20px;
+    right: -65px;
+  }
+  .two {
+    position: absolute;
+    height: 110px;
+    width: 61px;
+    bottom: 18px;
+    left: 100px;
+    border: 1px solid #aa445f;
+    border-width: 0 0px 0 70px;
+  }
+  .two::before {
+    content: "";
+    background-color: #e38f66;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .two::after {
+    content: "";
+    width: 70px;
+    height: 100%;
+    background-color: #aa445f;
+    position: absolute;
+    right: -70px;
+  }
+</style>
