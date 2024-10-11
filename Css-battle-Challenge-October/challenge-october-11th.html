@@ -1,0 +1,47 @@
+<div class="one"></div>
+<div class="two"></div>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+  }
+  .one {
+    width: 50%;
+    height: 100%;
+    background: #eeb850;
+  }
+  .one::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 240px;
+    background-color: #6592cf;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .one::after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 240px;
+    background-color: #6592cf;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+  }
+  .two {
+    width: 50%;
+    height: 100%;
+    background: #243d83;
+  }
+  .two::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 240px;
+    background-color: #6592cf;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+</style>
