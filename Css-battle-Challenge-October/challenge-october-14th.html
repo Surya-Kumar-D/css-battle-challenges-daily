@@ -1,0 +1,39 @@
+<div></div>
+<style>
+  body {
+    background-color: #6592cf;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 200px;
+    height: 200px;
+    border: 20px solid #f7cb71;
+    border-radius: 50%;
+    position: relative;
+  }
+  div::before {
+    content: "";
+    width: 90%;
+    height: 50px;
+    background-color: #f7cb71;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  div::after {
+    content: "";
+    width: 90%;
+    height: 50px;
+    background-color: #f7cb71;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    border-radius: 50%;
+  }
+</style>
