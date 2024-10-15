@@ -1,0 +1,78 @@
+<div class="one"></div>
+<div class="two"></div>
+<style>
+  body {
+    margin: 0;
+    background-color: #0b2429;
+  }
+  .one {
+    width: 120px;
+    height: 120px;
+    background: #1a4341;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top-left-radius: 85%;
+    border-bottom-right-radius: 85%;
+  }
+  .one::before {
+    content: "";
+    height: 125%;
+    width: 125%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #998235;
+    border-top-left-radius: 65%;
+    border-bottom-right-radius: 65%;
+    z-index: -1;
+  }
+
+  .one::after {
+    content: "";
+    height: 150%;
+    width: 150%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #f3ac3c;
+    border-top-left-radius: 55%;
+    border-bottom-right-radius: 55%;
+    z-index: -2;
+  }
+  .two {
+    width: 120px;
+    height: 120px;
+    background: #1a4341;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-left-radius: 85%;
+    border-bottom-right-radius: 85%;
+  }
+  .two::before {
+    content: "";
+    height: 125%;
+    width: 125%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #998235;
+    border-top-left-radius: 65%;
+    border-bottom-right-radius: 65%;
+    z-index: -1;
+  }
+
+  .two::after {
+    content: "";
+    height: 150%;
+    width: 150%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #f3ac3c;
+    border-top-left-radius: 55%;
+    border-bottom-right-radius: 55%;
+    z-index: -2;
+  }
+</style>
