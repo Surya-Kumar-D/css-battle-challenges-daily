@@ -1,0 +1,35 @@
+<div>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+<style>
+  body{
+    margin: 0;
+    background-color: #E38F66;
+  }
+  div {
+    width: 320px;
+    height: 140px;
+    background: #E38F66;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    position: absolute;
+    top: 134px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  p {
+    height: 100%;
+    width: 100%;
+    background-color: #F7F3D7;
+  }
+</style>
