@@ -1,0 +1,61 @@
+<div>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+<style>
+  body {
+    background-color: #191210;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 240px;
+    height: 240px;
+    background: #84271c;
+    position: relative;
+  }
+  p:nth-of-type(1) {
+    background-color: #191210;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    border-bottom-right-radius: 50%;
+    transform: translateY(-17px);
+  }
+  p:nth-of-type(2) {
+    background-color: #191210;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80px;
+    width: 80px;
+    border-bottom-right-radius: 50%;
+    transform: translateY(-17px) rotate(90deg);
+  }
+  p:nth-of-type(3) {
+    background-color: #191210;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    border-bottom-right-radius: 50%;
+    transform: translateY(16px) rotate(-90deg);
+  }
+  p:nth-of-type(4) {
+    background-color: #191210;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+    width: 80px;
+    border-bottom-right-radius: 50%;
+    transform: translateY(16px) rotate(180deg);
+  }
+</style>
