@@ -1,0 +1,26 @@
+<div></div>
+<style>
+  body {
+    margin: 0;
+    background-color: #434b92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 190px;
+    height: 100vh;
+    background: #f3ac3c;
+    position: relative;
+  }
+  div::before {
+    content: "";
+    position: absolute;
+    width: 121%;
+    height: 50px;
+    top: 25px;
+    left: -20px;
+    background-color: #f3ac3c;
+    box-shadow: 0px 100px #f3ac3c, 0 200px #f3ac3c;
+  }
+</style>
