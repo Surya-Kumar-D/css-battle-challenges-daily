@@ -1,0 +1,39 @@
+<div></div>
+<p></p>
+<style>
+  body {
+    background-color: #328fc1;
+    martgin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 90px;
+    height: 90px;
+    box-shadow: 90px 0 0 #243d83, 0 90px #243d83, -90px 0 #243d83,
+      0 -90px #243d83;
+    position: relative;
+    background-color: #328fc1;
+  }
+  div::before {
+    content: "";
+    position: absolute;
+    background-color: #eeb850;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    top: 0;
+    left: -50%;
+    box-shadow: 90px 0 #eeb850, 44px 46px #eeb850, 44px -46px #eeb850;
+  }
+  p {
+    background-color: #328fc1;
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
