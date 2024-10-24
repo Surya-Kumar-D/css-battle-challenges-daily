@@ -1,0 +1,41 @@
+<div></div>
+<p></p>
+<style>
+  body {
+    background-color: #434b92;
+    margin: 0;
+  }
+  div {
+    width: 100%;
+    height: 50px;
+    background: #f3ac3c;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #f3ac3c;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+  p {
+    position: absolute;
+    height: 190px;
+    width: 100px;
+    background-color: #f3ac3c;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  p::before {
+    height: 100%;
+    width: 100%;
+    background-color: #f3ac3c;
+    content: "";
+    position: absolute;
+    transform: rotate(90deg);
+  }
+</style>
