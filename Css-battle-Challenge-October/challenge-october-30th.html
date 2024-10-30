@@ -1,0 +1,38 @@
+<div></div>
+<style>
+  body {
+    background-color: #eeb850;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 320px;
+    height: 220px;
+    background: #aa445f;
+    position: absolute;
+  }
+  div::before {
+    background-color: #eeb850;
+    height: 40px;
+    width: 140px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: "";
+    transform: translate(-50%);
+    border-radius: 0 0 80px 80px;
+  }
+  div::after {
+    background-color: #eeb850;
+    height: 40px;
+    width: 140px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: "";
+    transform: translate(-50%);
+    border-radius: 80px 80px 0px 0px;
+  }
+</style>
