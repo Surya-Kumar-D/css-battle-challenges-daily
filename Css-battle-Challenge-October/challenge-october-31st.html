@@ -1,0 +1,37 @@
+<div></div>
+<style>
+  body {
+    background-color: #f3ead2;
+    margin: 0;
+  }
+  div {
+    width: 180px;
+    height: 108px;
+    background: #d96c7b;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  div::before {
+    content: "";
+    background-color: #d96c7b;
+    height: 120px;
+    width: 110px;
+    position: absolute;
+    top: -108px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  div::after {
+    content: "";
+    background-color: #d96c7b;
+    height: 73px;
+    width: 37px;
+    position: absolute;
+    top: -180px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 107px #f3ead2, 36px 214px #f3ead2, -36px 215px #f3ead2;
+  }
+</style>
