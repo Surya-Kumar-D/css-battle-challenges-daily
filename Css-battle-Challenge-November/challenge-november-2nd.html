@@ -1,0 +1,48 @@
+<p class="top"></p>
+<div>
+  <p></p>
+  <p></p>
+</div>
+<style>
+  body {
+    margin: 0;
+    background-color: #9d92c8;
+  }
+  p.top {
+    position: absolute;
+    top: 36px;
+    height: 40px;
+    width: 40px;
+    left: 45%;
+    border: 0px solid #f9ddc6;
+    border-left-width: 40px;
+    border-top-width: 40px;
+    border-top-left-radius: 100px;
+  }
+  div {
+    width: 120px;
+    height: 136px;
+    position: absolute;
+    bottom: 42px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  div p:nth-of-type(1) {
+    height: 136px;
+    width: 40px;
+    background-color: #f9ddc6;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  div p:nth-of-type(2) {
+    height: 120px;
+    width: 40px;
+    background-color: #f9ddc6;
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translate(-50%) rotate(90deg);
+  }
+</style>
