@@ -1,0 +1,36 @@
+<div></div>
+<style>
+  body {
+    margin: 0;
+    background-color: #2d3464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 120px;
+    height: 120px;
+    background: #c0d6e7;
+    position: relative;
+  }
+  div::before {
+    content: "";
+    height: 105px;
+    width: 133%;
+    position: absolute;
+    background-color: #c0d6e7;
+    top: 50%;
+    left: -20px;
+    transform: translate(0px, -50%);
+    border-radius: 50%;
+  }
+  div::after {
+    content: "";
+    position: absolute;
+    bottom: -61px;
+    height: 61px;
+    width: 16px;
+    background-color: #d95362;
+    box-shadow: 26px 0 #d95362, 52px 0 #d95362, 78px 0 #d95362, 104px 0 #d95362;
+  }
+</style>
