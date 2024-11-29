@@ -1,0 +1,68 @@
+<div>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+<style>
+  * {
+    margin: 0;
+    background-color: #35312f;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  div p:nth-of-type(1) {
+    position: absolute;
+    height: 100%;
+    width: 56px;
+    background-color: #f3ac3c;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  div p:nth-of-type(2) {
+    position: absolute;
+    width: 100%;
+    height: 56px;
+    background-color: #f3ac3c;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  div p:nth-of-type(3) {
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    background-color: #f3ac3c;
+  }
+  div p:nth-of-type(4) {
+    height: 55px;
+    width: 56px;
+    background-color: #f3ac3c;
+    position: absolute;
+    right: 0;
+  }
+  div p:nth-of-type(5) {
+    height: 56px;
+    width: 56px;
+    background-color: #f3ac3c;
+    position: absolute;
+    bottom: 0;
+  }
+  div p:nth-of-type(6) {
+    height: 56px;
+    width: 56px;
+    background-color: #f3ac3c;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+</style>
