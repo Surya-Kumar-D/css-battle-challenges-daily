@@ -1,0 +1,51 @@
+<div>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #e0e7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 281px;
+    height: 281px;
+    background: #4f77ff;
+    border-radius: 50%;
+    position: relative;
+  }
+  p:nth-of-type(1) {
+    height: 100px;
+    width: 100px;
+    background-color: #e0e7ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: solid 10px #e0e7ff;
+    outline-offset: 40px;
+  }
+  p:nth-of-type(2) {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    background-color: #e0e7ff;
+    right: 50px;
+    top: 120px;
+  }
+  p:nth-of-type(3) {
+    height: 80px;
+    width: 50px;
+    background-color: #e0e7ff;
+    position: absolute;
+    right: 0;
+    top: 100px;
+  }
+</style>
