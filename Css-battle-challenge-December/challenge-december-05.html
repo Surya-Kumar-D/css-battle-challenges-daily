@@ -1,0 +1,113 @@
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+<div class="four"></div>
+<div class="five"></div>
+<div class="six"></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #f2eaa8;
+  }
+  .one {
+    height: 100px;
+    width: 200px;
+    position: relative;
+    top: 49px;
+    left: 25px;
+    overflow: hidden;
+  }
+  .one::before {
+    content: "";
+    height: 200%;
+    width: 100%;
+    background-color: #7e6293;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .two {
+    height: 100px;
+    width: 200px;
+    position: relative;
+    top: 49px;
+    left: 25px;
+    overflow: hidden;
+  }
+  .two::before {
+    content: "";
+    height: 200%;
+    width: 100%;
+    background-color: #de6b67;
+    position: absolute;
+    border-radius: 50%;
+    top: -100px;
+  }
+  .three {
+    height: 50px;
+    width: 100px;
+    position: relative;
+    top: -100px;
+    right: -225px;
+    overflow: hidden;
+  }
+  .three::before {
+    content: "";
+    height: 200%;
+    width: 100%;
+    background-color: #de6b67;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .four {
+    height: 50px;
+    width: 100px;
+    position: relative;
+    top: -100px;
+    right: -225px;
+    overflow: hidden;
+  }
+  .four::before {
+    content: "";
+    height: 200%;
+    width: 100%;
+    background-color: #7e6293;
+    position: absolute;
+    border-radius: 50%;
+    top: -50px;
+  }
+  .five {
+    height: 25px;
+    width: 50px;
+    position: relative;
+    top: -175px;
+    right: -325px;
+    overflow: hidden;
+  }
+  .five::before {
+    content: "";
+    height: 200%;
+    width: 100%;
+    background-color: #7e6293;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .six {
+    height: 25px;
+    width: 50px;
+    position: relative;
+    top: -175px;
+    right: -325px;
+    overflow: hidden;
+  }
+  .six::before {
+    content: "";
+    height: 200%;
+    width: 100%;
+    background-color: #de6b67;
+    position: absolute;
+    border-radius: 50%;
+    top: -25px;
+  }
+</style>
