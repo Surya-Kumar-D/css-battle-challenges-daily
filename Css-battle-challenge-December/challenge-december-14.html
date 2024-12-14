@@ -1,0 +1,37 @@
+<div></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #2f5a76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 100px;
+    height: 100px;
+    background: #f5bb60;
+    transform: rotate(45deg);
+    position: relative;
+  }
+  div::before {
+    content: "";
+    height: 100%;
+    width: 30px;
+    background-color: #f5bb60;
+    position: absolute;
+    left: -50px;
+    box-shadow: 170px 0 #f5bb60;
+  }
+  div::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    top: -50px;
+    position: absolute;
+    background-color: #f5bb60;
+    box-shadow: 0 170px #f5bb60;
+  }
+</style>
