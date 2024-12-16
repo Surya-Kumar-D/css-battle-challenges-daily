@@ -1,0 +1,39 @@
+<div></div>
+<div></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #fade8b;
+  }
+  div:nth-of-type(1) {
+    width: 250px;
+    height: 30px;
+    background: #222222;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  div:nth-of-type(2) {
+    content: "";
+    height: 130px;
+    width: 100px;
+    background-color: #222222;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  div:nth-of-type(2)::before {
+    content: "";
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    border: 30px solid #fade8b;
+    top: -20px;
+    left: -20px;
+  }
+</style>
