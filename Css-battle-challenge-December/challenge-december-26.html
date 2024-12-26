@@ -1,0 +1,30 @@
+<div></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #5393bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div {
+    width: 170px;
+    height: 170px;
+    position: relative;
+    border: 0 solid #fae29e;
+    border-left-width: 30px;
+    border-bottom-width: 30px;
+  }
+  div::before {
+    content: "";
+    position: absolute;
+    height: 170px;
+    width: 30px;
+    background-color: #fae29e;
+    transform: rotate(-45deg);
+    top: 35px;
+    left: 27px;
+  }
+</style>
