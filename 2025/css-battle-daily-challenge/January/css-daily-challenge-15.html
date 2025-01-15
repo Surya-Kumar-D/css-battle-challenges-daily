@@ -1,0 +1,38 @@
+<div></div>
+<p></p>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #e0e7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 225px;
+    height: 90px;
+    background: #4f77ff;
+    clip-path: polygon(24% 0%, 77% 0%, 100% 55%, 77% 100%, 23% 100%, 0% 55%);
+    position: relative;
+  }
+  div::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    background-color: #e0e7ff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  p {
+    position: absolute;
+    height: 75px;
+    width: 30px;
+    background-color: #4f77ff;
+    top: 0;
+    box-shadow: 0 225px #4f77ff;
+  }
+</style>
