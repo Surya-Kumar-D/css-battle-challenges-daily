@@ -1,0 +1,37 @@
+<div></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #328fc1;
+  }
+  div {
+    width: 140px;
+    height: 140px;
+    background: #fade8b;
+  }
+  div::before {
+    content: "";
+    height: 140px;
+    width: 140px;
+    background-color: #fade8b;
+    position: absolute;
+    border-radius: 50%;
+    top: -70px;
+    left: -70px;
+  }
+  div::after {
+    content: "";
+    height: 140px;
+    width: 140px;
+    background-color: #fade8b;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -70px;
+    right: -70px;
+  }
+</style>
