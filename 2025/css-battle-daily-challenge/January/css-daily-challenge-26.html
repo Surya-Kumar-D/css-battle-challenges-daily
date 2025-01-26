@@ -1,0 +1,28 @@
+<div></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #ac342e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 30px;
+    height: 100vh;
+    background: #ffffff;
+  }
+  div::before {
+    content: "";
+    height: 30px;
+    width: 120px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 60;
+    box-shadow: 0 150px #ffffff, 120px 75px #ffffff, 160px 75px #ffffff,
+      280px 0 #ffffff, 280px 150px #ffffff;
+  }
+</style>
