@@ -1,0 +1,63 @@
+<div></div>
+<div></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #5aed9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div:nth-of-type(1) {
+    width: 100px;
+    height: 100px;
+    background: #4b4d88;
+    border-radius: 50%;
+  }
+  div:nth-of-type(1)::before {
+    content: "";
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    background-color: #4b4d88;
+    transform: rotate(-45deg);
+    right: 102px;
+    border-radius: 50px;
+    top: 67px;
+  }
+  div:nth-of-type(2) {
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    background-color: #4b4d88;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 74px;
+    border-radius: 50px;
+    box-shadow: 192px 0 #4b4d88;
+  }
+  div:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -68px;
+    left: 28px;
+    transform: rotate(45deg);
+    background-color: #4b4d88;
+    border-radius: 50px;
+  }
+  div:nth-of-type(2)::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -96px;
+    left: 96px;
+    transform: rotate(90deg);
+    background-color: #4b4d88;
+    border-radius: 50px;
+  }
+</style>
