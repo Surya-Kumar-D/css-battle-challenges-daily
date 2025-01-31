@@ -1,0 +1,36 @@
+<div><p></p></div>
+
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #2f5a76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 200px;
+    height: 140px;
+    border-radius: 110px;
+    border: 40px solid #c15965;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div::before {
+    content: "";
+    height: 40px;
+    width: 80px;
+    background-color: #2f5a76;
+    position: absolute;
+    bottom: 40px;
+  }
+  div p {
+    height: 60px;
+    width: 80px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #c15965;
+  }
+</style>
