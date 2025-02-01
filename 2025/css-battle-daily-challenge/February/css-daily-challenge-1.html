@@ -1,0 +1,38 @@
+<div></div>
+<style>
+  *{
+    margin: 0;
+  }
+  body {
+    background-color: #EBE77E;
+  }
+  div {
+    width: 160px;
+    height: 140px;
+    background: #DE817E;
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform:translate(-50%, -50%);
+  }
+  div::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    background-color: #DE817E;
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  top: 0;
+    left: -59px;
+  }
+  div::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    background-color: #EBE77E;
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  top: 0;
+    right: -1px;
+  }
+</style>
