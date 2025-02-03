@@ -1,0 +1,57 @@
+<div></div><div class="pyr"></div><div class="pyr2"></div>
+<style>
+  *{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #9076D8;
+  }
+  div:nth-of-type(1) {
+    width: 80px;
+    height: 80%;
+    background: #F5E3B5;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  div:nth-of-type(1)::before {
+    content: '';
+    height: 40px;
+    width: 100%;
+    background-color: #9076D8;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+  }
+  div:nth-of-type(1)::after {
+    content: '';
+    height: 40px;
+    width: 100%;
+    background-color: #9076D8;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+    top: 40px;
+
+  }
+  .pyr {
+    height: 40px;
+    width: 80px;
+    background-color: #9076D8;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .pyr2 {
+    height: 40px;
+    width: 80px;
+    background-color: #9076D8;
+ position: absolute;
+    bottom: 40;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+</style>
