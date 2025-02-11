@@ -1,0 +1,38 @@
+<div></div>
+<style>
+  *{
+    margin: 0;
+  }
+  body {
+    background-color: #FBFDB7;
+  }
+  div {
+    width: 280px;
+    height: 60px;
+    background: #46BA67;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    isolation: isolate;
+    z-index: 999;
+  }
+  div::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #D95362;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin:bottom left;
+    box-shadow: -180px 0 #46BA67, 0 -220px #46BA67, -220px -220px #D95362;
+    z-index: -1;
+  }
+  div::after {
+     content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #46BA67;
+    position: absolute;
+  }
+</style>
