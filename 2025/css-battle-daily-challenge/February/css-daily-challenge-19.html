@@ -1,0 +1,28 @@
+<div></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: #D95362;
+  }
+  div {
+    width: 80px;
+    height: 220px;
+    background: #FDFFE9;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 125px;
+  }
+  div::before {
+    content: '';
+    height: 50px;
+    width: 50px;
+    background-color: #FDFFE9;
+    border-radius: 50%;
+    position: absolute;
+    right: -70px;
+    box-shadow: 0 85px #FDFFE9, 0 170px #FDFFE9;
+  }
+</style>
