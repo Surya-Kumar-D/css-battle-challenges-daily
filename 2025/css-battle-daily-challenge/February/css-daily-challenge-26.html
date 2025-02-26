@@ -1,0 +1,28 @@
+<div></div>
+<style>
+  * {
+    margin: 0;
+  }
+  body  {
+    background-color: #46BA67;
+  }
+  div {
+    width: 40px;
+    height: 130px;
+    background: #4C4C6B;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    box-shadow: 200px 0 #4C4C6B, 100px -170px #FAE29E;
+  }
+  div::before {
+    content: '';
+    height: 40px;
+    width: 40px;
+    background-color: #FAE29E;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    box-shadow: 100px 0 #4C4C6B, 200px 0 #FAE29E;
+  }
+</style>
