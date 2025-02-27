@@ -1,0 +1,41 @@
+<div></div>
+<style>
+  *{
+    margin: 0;
+  }
+  body {
+    background-color: #A5B5B4;
+  }
+  div {
+    width: 150px;
+    height: 180px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  div::before {
+    content: '';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 20;
+    left: 55;
+    background-color: #000000;
+    border-radius: 50%;
+    box-shadow: 30px 0 #000000, 15px 20px #000000, 0 80px #000000, 0 100px #000000, 0 120px #000000, 30px 80px #000000, 30px 100px #000000, 30px 120px #000000; 
+  }
+  div::after {
+    content: '';
+    height: 30px;
+    width: 30px;
+    background-color: #000000;
+    position: absolute;
+    border-radius: 50%;
+    top: 50px;
+    left: 25px;
+    box-shadow: 70px 0 #000000; 
+  }
+</style>
